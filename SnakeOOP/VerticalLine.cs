@@ -8,6 +8,7 @@ namespace SnakeOOP
     {
         public VerticalLine(int yUp, int yDown, int x, char symb)
         {
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             pointList = new List<Point>();
             for (int i = yUp; i <= yDown; i++)
             {
