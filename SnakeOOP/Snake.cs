@@ -28,6 +28,8 @@ namespace SnakeOOP
             Point head = GetNextPoint();
             pointList.Add(head);
             head.Draw();
+            Random rnd = new Random();
+            Console.ForegroundColor = (ConsoleColor)rnd.Next(0, 16);
         }
         public Point GetNextPoint()
         {
@@ -41,18 +43,22 @@ namespace SnakeOOP
             if (key == ConsoleKey.LeftArrow)
             {
                 direction = Direction.LEFT;
+                
             }
             else if (key == ConsoleKey.RightArrow)
             {
                 direction = Direction.RIGHT;
+                
             }
             else if (key == ConsoleKey.UpArrow)
             {
                 direction = Direction.UP;
+                
             }
             else if (key == ConsoleKey.DownArrow)
             {
                 direction = Direction.DOWN;
+                
             }
         }
         public bool Eat(Point food)
@@ -63,6 +69,7 @@ namespace SnakeOOP
                 food.symb = head.symb;
                 pointList.Add(food);
                 return true;
+                
             }
             else
             {
@@ -80,6 +87,7 @@ namespace SnakeOOP
                 }
             }
             return false;
+            
         }
     }
 }

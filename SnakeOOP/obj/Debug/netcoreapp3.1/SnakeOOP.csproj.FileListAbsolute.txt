@@ -23,3 +23,4 @@ C:\Users\opilane\source\repos\week19-snakeoop\SnakeOOP\obj\Debug\netcoreapp3.1\S
 C:\Users\opilane\source\repos\week19-snakeoop\SnakeOOP\obj\Debug\netcoreapp3.1\SnakeOOP.dll
 C:\Users\opilane\source\repos\week19-snakeoop\SnakeOOP\obj\Debug\netcoreapp3.1\SnakeOOP.pdb
 C:\Users\opilane\source\repos\week19-snakeoop\SnakeOOP\obj\Debug\netcoreapp3.1\SnakeOOP.genruntimeconfig.cache
+C:\Users\opilane\source\repos\week19-snakeoop\SnakeOOP\obj\Debug\netcoreapp3.1\SnakeOOP.csprojAssemblyReference.cache

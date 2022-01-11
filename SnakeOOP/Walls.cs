@@ -20,6 +20,7 @@ namespace SnakeOOP
             HorizontalLine obstacle1 = new HorizontalLine(19, 37, 10, '¤');
             HorizontalLine obstacle2 = new HorizontalLine(13, 21, 15, 'X');
             VerticalLine obstacle3 = new VerticalLine(6, 2, 12, 'M');
+            
 
 
 

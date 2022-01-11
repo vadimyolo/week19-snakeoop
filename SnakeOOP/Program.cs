@@ -8,6 +8,7 @@ namespace SnakeOOP
         static void Main(string[] args)
         {
             int score = 0;
+            int x = 150;
             //drawing a game field frame
             Walls walls = new Walls(80, 25);
             walls.Draw();
@@ -33,7 +34,10 @@ namespace SnakeOOP
                     food.Draw();
                     Console.ForegroundColor = ConsoleColor.Red;
                     score++;
-                }
+                    Console.Beep();
+                    x = x - 10;
+                    
+                }              
                 else
                 {
                     snake.Move();
@@ -44,7 +48,7 @@ namespace SnakeOOP
                     ConsoleKeyInfo key = Console.ReadKey();
                     snake.HandleKeys(key.Key);
                 }
-                Thread.Sleep(300);
+                Thread.Sleep(x);
 
             }
             string str_score = Convert.ToString(score);
@@ -68,6 +72,6 @@ namespace SnakeOOP
         {
             Console.SetCursorPosition(xOffset, yOffset);
             Console.WriteLine(text);
-        }
+        }       
     }
 }
